@@ -10,7 +10,7 @@ class ClassComponent extends Component {
   // questa classe è un componente React
   render() {
     // senza render() il componente a classe non funziona!
-    return <h1>CIAO</h1>
+    return <h1>{this.props.title}</h1>
   }
 }
 

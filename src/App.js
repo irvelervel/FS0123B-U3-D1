@@ -24,17 +24,20 @@ const App = function () {
     <div className="App">
       <header className="App-header">
         {/* qua vorrei inserire il componente Header */}
-        <ClassComponent />
+        <ClassComponent title="EPICODE!" />
 
         {/* per interpolare stringhe con variabili e/o dati dinamici
       è sufficiente utilizzare una coppia di parentesi graffe {} */}
-        <h2>CIAO EPICODE, sono {myName}</h2>
+        <h2>CIAO EPICODE, sono {myName.toUpperCase()}</h2>
+        {console.log('ciao!')}
         <img
           src="https://placekitten.com/300"
           className="App-logo"
           alt="logo"
         />
         {/* printedName in gergo si chiama "prop" */}
+        {/* stiamo passando un pezzo di informazione dinamica
+        all'invocazione di un componente */}
         <Benvenuto printedName="Emanuele" colorOfTheText="red" />
         <Benvenuto printedName="Giorgia" colorOfTheText="green" />
         <Benvenuto printedName="Antonio" colorOfTheText="purple" />
